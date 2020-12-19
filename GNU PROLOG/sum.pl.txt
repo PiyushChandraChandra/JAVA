@@ -1,0 +1,5 @@
+findsum(L) :- sum(L,Sum).
+write("sum of the given list is",Sum).n1.
+sum([],0).
+sum([X|Tail],Sum):- sum(Tail,Temp).
+Sum:-Temp+X.
